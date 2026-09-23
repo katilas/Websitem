@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniyorum</title>
+    <link rel="icon" href="Resimler/turkbayragi.jpg">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Denemeler Yapıyorum</h1>
+    <hr>
+    <h3 class="yazi-ozellik">Neler Yapacağız?</h3>
+    <ol>
+        <li>Başlık Etiketleri</li>
+        <li>Paragraf ve Metin Biçimlendirme</li>
+        <li>Linkler Bağlantılar</li>
+        <li>Görsel Ekleme</li>
+        <li>Listeler</li>
+        <li>Tablo</li>
+        <li>Formlar</li>
+        <br>
+    </ol>
+    <!--1. Başlık Etiketleri-->
+    <h3 class="yazi-ozellik">1. Başlık Etiketleri</h3>
+    <p><b>Bunlar örnektir
+        </b></p>
+    <ul>
+        <li>
+            <h1>Ömer(h1)</h1>
+        </li>
+        <li>
+            <h2>Ömer(h2)</h2>
+        </li>
+        <li>
+            <h3>Ömer(h3)</h3>
+        </li>
+        <li>
+            <h4>Ömer(h4)</h4>
+        </li>
+        <li>
+            <h5>Ömer(h5)</h5>
+        </li>
+        <li>
+            <h6>Ömer(h6)</h6>
+        </li>
+    </ul>
+    <hr>
+    <!--2. Paragraf ve Metin Biçimlendirme-->
+    <h3 class="yazi-ozellik">2. Paragraf ve Metin Biçimlendirme</h3>
+    <p><b>Bu bir paragraf etiketidir. HTML'de metinleri alt alta düzenli yazmak için
+            p etiketi kullanılır.</b></p>
+    <p>
+        <b>Kalın metin yazmak istiyorsak (b)</b><br>
+        <i>Eğik metin için (i)</i><br>
+        <u>altı çizi olmasını istiyorsak (u)</u><br>
+        <del>Üstü çizik olmasını istiyorsak (del)</del><br>
+        <mark>Vurgulanmış önemli metin için (mark)</mark><br>
+        <small>Küçük metin telif hakları vb. içim (small)</small><br>
+    </p>
+    <hr>
+    <!--3. Linkler Bağlantılar-->
+    <h3 class="yazi-ozellik">3. Linkler Bağlantılar</h3>
+
+    <p><b>Googleyi yeni sekmede açmak için a etiketinin içerisine targetten _blank koyuyoruz</b></p>
+    <a href=" https://google.com" target="_blank" rel="noopener"> Googleye git</a>
+    <h3>Eğer aynı sekmeden açmak istiyorsak target yazmazsak oluyor</h3>
+    <a href="https://google.com" rel="noopener">Google'ye git</a><br><br>
+    <p><b>Eğer bir resim ile beraber açmak istiyorsak a etiketinin dışarısına img etiketi kullanrız sonra resmin
+            yolunu
+            belirtiriz</b></p>
+    <a href="https://google.com" target="_blank"><img src="Resimler/turkbayragi.jpg" alt=""></a>
+    <hr>
+    <!--4. Görsel eklemek-->
+    <h3 class="yazi-ozellik">4. Görsel eklemek</h3>
+    <p><b>(img) ile gerçekleşir. src'nin içerisindeki alt ne olduğunu belirler</b></p>
+    <p><b>width ise genişliğini height ise uzunluğunu belirler</b></p>
+
+    <img src="Resimler/turkbayragi.jpg" alt="Türk Bayrağı resimi" width="200" height="150">
+    <hr>
+    <!--5. Listeler-->
+    <h3 class="yazi-ozellik">5. Listeler</h3>
+    <p><b>Sırasız liste için ul, sıralı liste için ol kullanırızç. Listenin içerisine li ile maddeleri yazarız</b>
+    </p>
+    <h3>Alışveriş Listesi (Sırasız Liste-ul)</h3>
+    <ul>
+        <li>Ekmek</li>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Kavun</li>
+    </ul>
+    <br>
+    <h3>Alışveriş Listesi (Sıralı Liste-ol)</h3>
+    <ol type="I" start="10">
+        <li>Ekmek</li>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Kavun</li>
+    </ol>
+    <hr>
+    <!--Tablo-->
+    <h3 class="yazi-ozellik">6. Tablo</h3>
+    <p><b>Tablo oluştururken (tr) etiketini kullanırız içerisinede (th) etiketi kullanırız</b></p>
+    <br>
+    <p><b>colspan(yataya birleştirmek)-rowspan(dikey birleştirmek)</b></p>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th colspan="2">İsim-Soyisim</th>
+            <th colspan="2">Ders-Not</th>
+        </tr>
+        <tr>
+            <th>Ömer</th>
+            <th>Faruk</th>
+            <th>Matematik</th>
+            <th rowspan="4">100</th>
+        </tr>
+        <tr>
+            <th>Kaan</th>
+            <th>Ayan</th>
+            <th>Matemetik</th>
+        </tr>
+        <tr>
+            <th>Basir</th>
+            <th>Mahmood</th>
+            <th>Matemetik</th>
+        </tr>
+        <tr>
+            <th>Ayşe</th>
+            <th>Başaran</th>
+            <th>Matemetik</th>
+        </tr>
+
+    </table>
+    <hr>
+    <!--7. Formlar-->
+    <h3 class="yazi-ozellik">7. Formlar</h3>
+    <form action="#" method="get">
+        <p>
+            <label for="kullanici_adi">Kullanıcı Adı</label><br>
+            <input type="text" name="kullanici_adi" placeholder="Adınızı Giriniz">
+        </p>
+        <p>
+            <label for="email">E-posta:</label><br>
+            <input type="email" name="email" placeholder="örnek@mail.com" id="email">
+        </p>
+        <p>
+            <label for="sifre">Şifre:</label><br>
+            <input type="password" id="sifre" name="sifre" placeholder="Şifrenizi giriniz">
+        </p>
+        <p>
+            <label for="yas">Yaşınız:</label>
+            <input type="number" id="yas" name="yas" min="1" max="100">
+        </p>
+        <p>
+            <label for="dogum_tarihi">Doğum Tarihi:</label>
+            <input type="date" name="dogum_tarihi" id="dogum_tarihi">
+        </p>
+        <p>
+            <input type="radio" name="cinsiyet" id="erkek" value="Erkek">
+            <label for="erkek">Erkek</label>
+
+            <input type="radio" name="cinsiyet" id="kadin" value="Kadın">
+            <label for="kadin">Kadın</label>
+        </p>
+        <h4>Hobileriniz:</h4><br>
+        <input type="checkbox" name="hobi" id="kitap" value="Kitap">
+        <label for="kitap">Kitap Okumak</label>
+
+        <input type="checkbox" name="hobi" id="spor" value="Spor">
+        <label for="spor">Spor Yapmak</label>
+
+        <input type="checkbox" name="hobi" id="kodlama" value="kodlama">
+        <label for="kodlama">Kodlama yapmak</label>
+        </p>
+        <label for="mesaj">Bize Mesajınız</label>
+        <br>
+        <textarea name="mesaj" id="mesaj" rows="4" cols="40"
+            placeholder="Mesajınızı Buraya Yazabilisiniz..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Formu Gönder">
+            <input type="reset" value="Temizle">
+        </p>
+    </form>
+    <hr>
+    <!--8. Tıklayınca Açılan Kutu (details)-->
+    <h3 class="yazi-ozellik">8. Tıklayınca Açılan Kutu (details)</h3>
+    <details>
+        <summary>Html Nedir (Cevabı görmek için buraya tıklayınız)</summary>
+        <p>
+            HTML (HyperText Markup Language), web sayfalarını oluşturmak için
+            kullanılan standart metin işaretleme dilidir. Bir web sitesinin
+            iskeletidir!
+        </p>
+    </details>
+    <details>
+        <summary> Css Nedir? (Cevabı Görmek İçin Tıklyınız)</summary>
+        <p>CSS ise bu iskelete renk, yazı tipi ve düzen vererek güzel görünmesini
+            sağlayan stil dilidir. Onu da daha sonra öğreneceksin! 😊</p>
+    </details>
+</body>
+
+
+</html>
